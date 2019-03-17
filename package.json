@@ -5,11 +5,13 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "bulma": "^0.7.4",
     "lodash": "^4.17.11",
+    "push-dir": "^0.4.1",
     "vue": "^2.6.6",
     "vue-router": "^3.0.1",
     "vue-swatches": "^1.0.3",
