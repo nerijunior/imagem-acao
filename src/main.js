@@ -3,6 +3,9 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import 'bulma/bulma.sass'
+import 'vue-swatches/dist/vue-swatches.min.css'
+
 Vue.config.productionTip = false
 
 new Vue({
