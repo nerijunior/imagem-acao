@@ -1,15 +1,31 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import router from '@/router'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    gameStarted: false,
     teams: [
-      { name: '', color: '#4a86e8', players: [] },
-      { name: '', color: '#ff00ff', players: [] }
+      {
+        name: '',
+        color: '#4a86e8',
+        players: [],
+        score: 0
+      },
+      {
+        name: '',
+        color: '#ff00ff',
+        players: [],
+        score: 0
+      }
+    ],
+    turns: [
+
     ]
   },
+
   mutations: {
     SET_TEAM_NAME (state, payload) {
       const team = state.teams[payload.team]
@@ -29,6 +45,12 @@ export default new Vuex.Store({
 
     REMOVE_TEAM_PLAYER (state, payload) {
       state.teams[payload.team].players.splice(payload.index, 1)
+    }
+  },
+
+  actions: {
+    PLAY_GAME () {
+      router.push('/game')
     }
   }
 })

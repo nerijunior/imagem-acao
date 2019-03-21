@@ -674,6 +674,11 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@chenfengyuan/vue-countdown@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@chenfengyuan/vue-countdown/-/vue-countdown-1.1.0.tgz#f4c3f1eaab1da1ca6b64bd6039817e038ee25ed1"
+  integrity sha512-BDJMuBEU5EuUxf7+gkD+ks1fmY7aVV1ryCLhcXajexiz1cz9ws6kPShg9Q2KrYRxKGsoqPqMuXtlSZXaB/roZQ==
+
 "@intervolga/optimize-cssnano-plugin@^1.0.5":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@intervolga/optimize-cssnano-plugin/-/optimize-cssnano-plugin-1.0.6.tgz#be7c7846128b88f6a9b1d1261a0ad06eb5c0fdf8"
@@ -1708,6 +1713,11 @@ builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
+
+bulma-extensions@^6.2.4:
+  version "6.2.4"
+  resolved "https://registry.yarnpkg.com/bulma-extensions/-/bulma-extensions-6.2.4.tgz#28f5589055b1c6bf894994f8e8260426e9ac1f0b"
+  integrity sha512-AaG3/OfGgdx03fQDabLadagATVpBvXXhFjiv7lnOd9DzTHRPC3fjlNL3qnVQ8IFS9t428FvS3lAmBmtfQh7ylA==
 
 bulma@^0.7.4:
   version "0.7.4"
@@ -5337,6 +5347,11 @@ mkdirp@0.5.1, mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@
   dependencies:
     minimist "0.0.8"
 
+moment@^2.24.0:
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
+  integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
+
 move-concurrently@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/move-concurrently/-/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"
@@ -8118,6 +8133,16 @@ vue-loader@^15.6.4:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
+
+vue-material-design-icons@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/vue-material-design-icons/-/vue-material-design-icons-3.1.0.tgz#1c24752f4a43c40cad08c391d66e6fbd8ffaf2af"
+  integrity sha512-2u+LRzsEKn4SmT35wCmmV0taqd90R1IWtZbHtwx6SUem2qma8SwWYAalr/pjOjATlSiWIQeka4DYYc3lch1Fvw==
+
+vue-notification@^1.3.16:
+  version "1.3.16"
+  resolved "https://registry.yarnpkg.com/vue-notification/-/vue-notification-1.3.16.tgz#b2eca3416a94a46e35aa2516710a0fcd2c8515ea"
+  integrity sha512-ZL57GcyeAnJK5ItWWkZ3+wcf3OlLFs9WIukxXwJBSIzIXUlXXxXzeVkZrhUf3Q/FkbWWAYRmzKXXP742ZiyxOw==
 
 vue-router@^3.0.1:
   version "3.0.2"
