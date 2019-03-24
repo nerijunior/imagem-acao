@@ -224,7 +224,6 @@ export default {
     },
 
     playGame () {
-      console.log('deu boa')
       this.$store.dispatch('PLAY_GAME')
     }
   }

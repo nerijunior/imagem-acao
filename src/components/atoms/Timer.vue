@@ -7,10 +7,18 @@
 <script>
 import VueCountdown from '@chenfengyuan/vue-countdown'
 import ClockTickSound from '@/assets/clock-tick.mp3'
+import AlarmSound from '@/assets/short-alarm.mp3'
 import { PLAYER_TIME } from '@/constants'
+import { setTimeout } from 'timers'
 
 export default {
   props: ['play'],
+
+  data () {
+    return {
+      // audios = []
+    }
+  },
 
   components: {
     VueCountdown
@@ -45,6 +53,18 @@ export default {
       setTimeout(() => {
         clearInterval(interval)
       }, 1000 * 10)
+
+      setTimeout(() => {
+        this.alarm()
+      }, 1000 * 11)
+    },
+
+    alarm () {
+      const audio = new Audio(AlarmSound)
+      audio.play()
+      audio.currentTime = 0
+
+      this.$emit('stoped')
     },
 
     handleCountdownProgress (data) {

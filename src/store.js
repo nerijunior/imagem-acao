@@ -22,7 +22,7 @@ export default new Vuex.Store({
       }
     ],
     turns: [
-
+      // { player: , word: , weight: }
     ]
   },
 
@@ -45,11 +45,24 @@ export default new Vuex.Store({
 
     REMOVE_TEAM_PLAYER (state, payload) {
       state.teams[payload.team].players.splice(payload.index, 1)
+    },
+
+    SET_POINT (state, payload) {
+      state.teams[payload.team].score = state.teams[payload.team].score + parseInt(payload.points)
+    },
+
+    START_GAME (state) {
+      state.gameStarted = true
+    },
+
+    STOP_GAME (state) {
+      state.gameStarted = false
     }
   },
 
   actions: {
-    PLAY_GAME () {
+    PLAY_GAME (context) {
+      context.commit('START_GAME')
       router.push('/game')
     }
   }

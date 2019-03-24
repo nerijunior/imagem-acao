@@ -1,1 +1,1 @@
-export const PLAYER_TIME = 20
+export const PLAYER_TIME = 60
