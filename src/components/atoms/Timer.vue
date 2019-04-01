@@ -16,7 +16,7 @@ export default {
 
   data () {
     return {
-      // audios = []
+      oldTitle: ''
     }
   },
 
@@ -28,6 +28,12 @@ export default {
     time () {
       return PLAYER_TIME
     }
+  },
+
+  mounted () {
+    console.log('TESTE')
+    this.oldTitle = document.title
+    console.log(this.oldTitle)
   },
 
   methods: {

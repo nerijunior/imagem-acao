@@ -62,6 +62,8 @@ export default new Vuex.Store({
 
   actions: {
     PLAY_GAME (context) {
+      localStorage.setItem('teams', JSON.stringify(context.state.teams))
+
       context.commit('START_GAME')
       router.push('/game')
     }

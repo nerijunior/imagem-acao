@@ -123,6 +123,10 @@ export default {
     }
   },
 
+  mounted () {
+    this.checkExistingTeam()
+  },
+
   computed: {
     computedFirstTeamName () {
       return (!_empty(this.firstTeamName)) ? `Time: ${this.firstTeamName}` : 'Time 1'
@@ -194,6 +198,15 @@ export default {
   },
 
   methods: {
+    checkExistingTeam () {
+      const storageTeams = localStorage.getItem('teams')
+      if (!storageTeams) {
+
+      }
+
+      // const teams = JSON.parse(storageTeams)
+    },
+
     addFirstTeamPlayer () {
       if (_empty(this.firstTeamPlayerName)) {
         return
